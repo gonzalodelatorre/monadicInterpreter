@@ -6,9 +6,13 @@ Here's the concrete syntax for this language:
  
  
 digit ::= '0' | '1' | ... | '9'
+
 letter ::= 'a' | .. | 'Z'
+
 nat ::= digit | digit nat
+
 var ::= letter | letter var
+
 intexp ::= nat
 		| var
 		| '-' intexp
@@ -29,6 +33,7 @@ boolexp ::= 'true' | 'false'
 		| boolexp '||' boolexp
 		| '!' boolexp
 		| '(' boolexp ')'
+		
 comm ::= skip
 		| var '=' intexp
 		| comm ';' comm
