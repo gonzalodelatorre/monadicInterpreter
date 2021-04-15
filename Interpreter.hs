@@ -1,6 +1,6 @@
 {-# LANGUAGE GADTs #-}
 
-module Eval1
+module Interpreter
   ( eval
   , Env
   )
