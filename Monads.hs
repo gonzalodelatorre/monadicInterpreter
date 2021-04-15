@@ -2,9 +2,6 @@ module Monads where
 
 import           AST
 
-
-
-
 class Monad m => MonadState m where
     lookfor :: Variable -> m Int
     update :: Variable -> Int -> m ()
