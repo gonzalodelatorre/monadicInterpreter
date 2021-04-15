@@ -14,11 +14,12 @@ intexp ::= nat
 		| '-' intexp
 		| intexp '+' intexp
 		| intexp '-' intexp
-		| intexp '*' intexp
+		| intexp '* ' intexp
 		| intexp '/' intexp
 		| '(' intexp ')'
 		| var '=' intexp
 		| intexp ';' intexp
+		
 boolexp ::= 'true' | 'false'
 		| intexp '==' intexp
 		| intexp '!=' intexp
