@@ -19,8 +19,6 @@ import           Control.Monad                  ( liftM
                                                 )
 
 -- State
-
-
 type Env = M.Map Variable Int
 
 -- Empty State
