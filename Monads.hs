@@ -1,6 +1,6 @@
 module Monads where
 
-import           AST
+import AST
 
 class Monad m => MonadState m where
     lookfor :: Variable -> m Int
